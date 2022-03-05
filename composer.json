@@ -1,0 +1,24 @@
+{
+	"name": "attokit/attohttp",
+	"type": "library",
+	"description": "simple PHP http request and response library",
+	"keywords": ["http", "http request", "http response", "http library"],
+	"homepage": "https://cgy.design/attokit/attohttp",
+	"license": "MIT",
+	"support": {
+		"issues": "https://github.com/attokit/attohttp/issues",
+		"source": "https://github.com/attokit/attohttp"
+	},
+	"authors": [
+		{"name": "cgy", "email": "cgy_design@126.com"}
+	],
+	"require": {
+		"php": ">=7.3",
+		"attokit/attofunc": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Atto\\AttoHttp\\": "src/"
+		}
+	}
+}
