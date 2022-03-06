@@ -1,7 +1,7 @@
 {
 	"name": "attokit/attohttp",
 	"type": "library",
-	"description": "simple PHP http request and response library",
+	"description": "simple PHP http request and response library. Use it only for development",
 	"keywords": ["http", "http request", "http response", "http library"],
 	"homepage": "https://cgy.design/attokit/attohttp",
 	"license": "MIT",
