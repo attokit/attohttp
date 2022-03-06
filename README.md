@@ -77,6 +77,37 @@ default export HTML, support following formats: `html, json, page, txt, xml, cod
 For instance, you can response 404 by using code: `Response::code(404)`  
 
 
+## Create Customized Route
+
+Route classes placed in direction `[project root]/route`.  
+Customized route must extends from `\Atto\AttoHttp\route\Base`.  
+
+```php
+
+namespace \Atto\AttoHttp\route;
+
+//response to url "https://host/myroute[/..]"
+class MyRoute extends Base
+{
+  //route info
+  public $intr = "route introduction";
+  public $name = "MyRoute";
+  public $appname = "attoapp name (if you also use attoapp)";
+  public $key = "Atto/AttoHttp/route/MyRoute";
+  
+  //response to url "https://host/myroute"
+  public function defaultMethod()
+  { }
+  
+  //response to url "https://host/myroute/foo/$p1/$p2/..."
+  public function foo($p1, $p2, ...)
+  { }
+  
+}
+
+```
+
+
 ## Other Attokits
 
 working on it.  
