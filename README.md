@@ -1,14 +1,15 @@
 ![attokit_attohttp logo](https://cgy.design/src/icon/logo/attokit/logo_attokit_attohttp.svg "attokit/attohttp")
 
-Simple PHP http request and response library. Use it only in your own funny-stuff projects. ***DO NOT use in Production Environment!***
-Attohttp lib provides http request, router & response creations.
-It's ugly, but simple, decoupled, much easer then regular PHP frameworks. You can use it in whatever way you like. It works all fine with other attokit-libraries.
+Simple PHP http request and response library. Use it only in your own funny-stuff projects. ***DO NOT use in Production Environment!***  
+Attohttp lib provides http request, router & response creations.  
+It's ugly, but simple, decoupled, much easer then regular PHP frameworks. You can use it in whatever way you like. It works all fine with other attokit-libraries.  
+  
+Composer required. **[About Composer](https://getcomposer.org)**  
 
-Composer required. **[About Composer](https://getcomposer.org)**
 
 ## Install
 
-Use composer to install package.
+Use composer to install package.  
 
 ```
 
@@ -18,12 +19,13 @@ $ composer dump
 
 ```
 
-Director like `[project root]/vendor/attokit/attohttp`.
-If composer-autoload works fine, now you can use attohttp-classes in your own project.
+Director like `[project root]/vendor/attokit/attohttp`.  
+If composer-autoload works fine, now you can use attohttp-classes in your own project.  
+
 
 ## Usage
 
-You need config your server first, in order to make all http-requests be processed only by your index page.
+You need config your server first, in order to make all http-requests be processed only by your index page.  
 
 ```
 
@@ -39,7 +41,7 @@ You need config your server first, in order to make all http-requests be process
 
 ```
 
-If you want to use `\Atto\AttoHttp\Router` to takeover all http-requests, simply add these codes to your index page. 
+If you want to use `\Atto\AttoHttp\Router` to takeover all http-requests, simply add these codes to your index page.   
 
 ```php
 
@@ -47,7 +49,7 @@ require_once("vendor/attokit/attohttp/src/start.php");
 
 ```
 
-If you just want to use some classes, use these codes.
+If you just want to use some classes, use these codes.  
 
 ```php
 
@@ -70,10 +72,11 @@ $rep->export();
 
 ```
 
-You can change export data format simply by using querystring `?format=foobar`.
-default export HTML, support following formats: `html, json, page, txt, xml, code, dump`.
-For instance, you can response 404 by using code: `Response::code(404)`
+You can change export data format simply by using querystring `?format=foobar`.  
+default export HTML, support following formats: `html, json, page, txt, xml, code, dump`.  
+For instance, you can response 404 by using code: `Response::code(404)`  
+
 
 ## Other Attokits
 
-working on it.
+working on it.  
